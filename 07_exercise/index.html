@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id='inputSection'>
+        <input type="text" id="textInput">
+        <input type="submit" value="reverse" onclick=weekDays()>
+    </section>
+
+    <script>
+        function weekDays() {
+            let input = document.getElementById("textInput").value
+            let section = document.getElementById("inputSection")
+            let output = document.createElement("p")
+
+            let weekDays = []
+            arr.push(input)
+
+            switch (new Date().getDate()) {
+                case 1:
+                    day = "Monday";
+
+                    break;
+                case 2:
+                    day = "Tuesday";
+                    break;
+                case 3:
+                    day = "Tuesday";
+                    break;
+
+                default:
+                    day = "Monday"
+                    break;
+            }
+        }
+        output.textContent = weekDays
+        section.appendChild(output)
+    </script>
+</body>
+
+</html>
