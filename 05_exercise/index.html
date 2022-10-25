@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id='inputSection'>
+        <input type="text" id="textInput">
+        <input type="submit" value="reverse" onclick=lastValue()>
+    </section>
+
+    <script>
+        const arr = []
+
+        function lastValue() {
+            let input = document.getElementById("textInput").value
+            let section = document.getElementById("inputSection")
+            let output = document.createElement("p")
+
+            arr.push(input)
+            let pop = arr.pop()
+
+            output.textContent = pop
+            section.appendChild(output)
+
+        }
+    </script>
+</body>
+
+</html>
