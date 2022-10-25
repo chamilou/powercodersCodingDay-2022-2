@@ -70,6 +70,10 @@ picture {
     /* Text Elements */
     h1 {
         grid-area: title;
+        /* color: red */
+    }
+    span {
+        color: red;
     }
     /* Layout Elements */
     aside {
