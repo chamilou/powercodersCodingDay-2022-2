@@ -8,11 +8,20 @@ html {
     background-color: aliceblue;
 }
 
+h2 {
+    margin-left: 5px;
+}
+
 header {
     display: flex;
     flex-direction: row;
     background-color: white;
+    padding: 10px;
     width: 100%;
+    font-size: 0.8rem;
+    font-style: oblique;
+    align-items: center;
+    margin-top: 10px;
 }
 
 article a {
@@ -26,6 +35,8 @@ main {
     /* background-color: white; */
     display: grid;
     grid-template-columns: 250px auto 150px;
+    /* justify-content: stretch; */
+    align-content: stretch;
 }
 
 #leftSidebar {
@@ -44,6 +55,7 @@ main {
 .center {
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
 }
 
 .center article {
@@ -58,17 +70,14 @@ article p {
     padding: 10px;
 }
 
-.center article {
-    gap: 10px;
-}
-
 #rightSidebar {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    margin: 1px;
 }
 
 #rightSidebar article {
-    background-color: aliceblue;
     padding: 10px;
     justify-content: center;
 }
